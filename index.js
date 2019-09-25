@@ -6,6 +6,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname + '/index.html');
 });
 
-http.listen(port, '0.0.0.0,', function(){
+http.listen(port, '0.0.0.0', function(){
   console.log('listening on *: ' + port);
 });
