@@ -318,9 +318,9 @@
       socket.on('chat message', function (data) {
         console.log(data);
         if (data.username == $('#name').val()) {
-          $('#messages').append($("<ul/>", { class: "bubble containerright" }).text($('#name').val()+" "+data.msg))
+          $('#messages').append($("<ul/>", { class: "bubble containerright" }).text($('#name').val()+": "+data.msg))
         } else {
-          $('#messages').append($("<ul/>", { class: "bubble container" }).text(data.username+" "+data.msg))
+          $('#messages').append($("<ul/>", { class: "bubble container" }).text(data.username+": "+data.msg))
 
         }
 
