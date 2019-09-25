@@ -319,8 +319,11 @@
         console.log(data);
         if (data.username == $('#name').val()) {
           $('#messages').append($("<ul/>", { class: "bubble containerright" }).text(data.msg))
+          $('#messages').append($("<p/>", { class: "nameright" }).text($('#name').val()))
         } else {
           $('#messages').append($("<ul/>", { class: "bubble container" }).text(data.msg))
+          $('#messages').append($("<p/>", { class: "nameleft" }).text(data.username))
+
         }
 
 
