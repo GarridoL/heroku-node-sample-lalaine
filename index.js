@@ -6,6 +6,6 @@ app.get('/', function(req, res){
   res.send('<h1>Hello world</h1>');
 });
 
-http.listen(port, function(){
+http.listen(port, '0.0.0.0,', function(){
   console.log('listening on *: ' + port);
 });
